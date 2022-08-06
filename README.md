@@ -62,7 +62,7 @@ MongoDB has been used to store the data.
 14. **templates:** In folder structure for a Flask app, the templates folder houses html files that contain static data as well as placeholders for dynamic data. Flask uses the Jinja template library to render templates
 
 
-## INSTALLATION AND GUIDE ON HOW TO EXECUTE THE PROJECT ON UBUNTU 20.04LTS
+## INSTALLATION AND GUIDE ON HOW TO EXECUTE THE PROJECT
 
 ### MongoDB
 1. Set up your database account
@@ -95,6 +95,7 @@ MongoDB cluster will append your username to the string automatically. You'll ne
         $ virtualenv venv
 
 5. Activate virtual environment
+
 For Windows:
 
         $ venv\Scripts\activate
@@ -112,6 +113,12 @@ For Mac OS / Linux
 - replace {YOUR MONGODB CONNECTION STRING} with the MongoDB Connection String gotten earlier. Remember to replace {password} in the MongoDB Connection String with the permission password you set while creating MongoDB Cluster.
 
 8. Configure your flask path
+
+For Windows:
+
+        $ set FLASK_APP=run.py
+
+For Mac OS / Linux
 
         $ export FLASK_APP=run.py
 
