@@ -39,6 +39,7 @@ MongoDB has been used to store the data.
         |   |   |-- includes
         |   |   |   `-- _message.html
         |   |   |-- index.html
+        |   |   |-- layout.html
         |   |   `-- view_sample.html
         |   `-- view.py
         |-- config.py
@@ -129,6 +130,7 @@ For Mac OS / Linux
 
 10. Head to http://127.0.0.1:5000
 
-- This project has been developed on an Ubuntu 20.04LTS using Flask server (http://127.0.0.1:5000) and hosted on Heroku cloud (<a href="https://tissue-sample-collection.herokuapp.com">open app</a>) for remote access.
 
-- Finally, this application works with a connection to a MongoDB database to allow a Tissue Sample directory to keep track of the number of samples with certain characteristics contained within a larger collection of samples.
+This project has been developed on an Ubuntu 20.04LTS using Flask server (http://127.0.0.1:5000) and hosted on Heroku cloud (<a href="https://tissue-sample-collection.herokuapp.com">open app</a>) for remote access.
+
+Finally, this application works with a connection to a MongoDB database to allow a Tissue Sample directory to keep track of the number of samples with certain characteristics contained within a larger collection of samples.

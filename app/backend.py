@@ -3,6 +3,8 @@ from pymongo.collection import ReturnDocument
 from flask_restful import reqparse, Resource
 from concurrent.futures import ThreadPoolExecutor
 from app.routes import to_day, get_last_collectionId
+from datetime import timedelta
+from ratelimit import limits, sleep_and_retry
 
 
 
@@ -33,6 +35,8 @@ class CollectionsCRUD(Resource):
         return {"status": True, "message": message,"data":None}, 200
     
     #API to retrieve all Sample collections in Database
+    # @sleep_and_retry
+    # @limits(calls=20, period=1) #This blocks the thread if more requests than 20 per second is issued.
     def get(self):
         result = collectiondb.find({},{"_id":0})
         alldata = [item for item in result]

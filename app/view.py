@@ -180,13 +180,14 @@ def add_sample(collection_id):
         response = r.json()
     except Exception as e:
         flash(e, "danger") #danger is a category
-        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=[], year=fn.footer_year())
+        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=[], count="0", year=fn.footer_year())
 
     if response.get("status"):
         data2 = response["data"]
-        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=data2, year=fn.footer_year())
+        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=data2, count=len(data2), year=fn.footer_year())
 
     else:
         message = response["message"]
-        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=[], year=fn.footer_year())
+        flash(message, "danger") #danger is a category
+        return render_template("view_sample.html", title="Samples Records | Tissue Sample Collection", action="active", data1=data1, data2=[], count="0", year=fn.footer_year())
 
