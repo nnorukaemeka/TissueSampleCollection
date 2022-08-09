@@ -45,6 +45,7 @@ MongoDB has been used to store the data.
         |-- config.py
         |-- requirements.txt
         |-- run.py
+        |-- system_flowchart.pdf
 
 ### Directory Tree Walkthrough
 1. **LICENSE:** A document that provides legally binding guidelines for the use and distribution of software.
@@ -53,14 +54,15 @@ MongoDB has been used to store the data.
 4. **config.py:** A python configuration file for the application.
 5. **requirements.txt:** a file listing all the dependencies for this project.
 6. **run.py:** A python file to run the code.
-7. **app:** It is an application folder that contains other folders and files for easy launch.
-8. **__init__.py:** This python file makes Python treat 'app' folder containing it as a module. Furthermore, this is the first file to be loaded in a module.
-9. **backend.py:** This python file contains the APIs which the client-side calls. The POSTMAN documentation for the APIs is found <a href="https://documenter.getpostman.com/view/9697202/VUjMnRGe">here</a>
-10. **error.py:** This python file contains the codes that returns error pages.
-11. **routes.py:** This python file contains reuseable codes (functions and classes) used in building APIs.
-12. **view.py:** This python file contains the client-side code used in making http request to the APIs and rendering HTML files.
-13. **static:** In folder structure for a Flask app, the static folder contains assets used by the templates, including CSS files, JavaScript files, and images.
-14. **templates:** In folder structure for a Flask app, the templates folder houses html files that contain static data as well as placeholders for dynamic data. Flask uses the Jinja template library to render templates
+7. **system_flowchart.pdf:** This file contains the design/flowchart, endpoints, request methods and rule of the system. It could also be found <a href="https://drive.google.com/file/d/1lJDmn86yOnzY2AkvXd5RFmek5J1TRSEV/view?usp=sharing">here</a>
+8. **app:** It is an application folder that contains other folders and files for easy launch.
+9. **__init__.py:** This python file makes Python treat 'app' folder containing it as a module. Furthermore, this is the first file to be loaded in a module.
+10. **backend.py:** This python file contains the APIs which the client-side calls. The POSTMAN documentation for the APIs is found <a href="https://documenter.getpostman.com/view/9697202/VUjMnRGe">here</a>
+11. **error.py:** This python file contains the codes that returns error pages.
+12. **routes.py:** This python file contains reuseable codes (functions and classes) used in building APIs.
+13. **view.py:** This python file contains the client-side code used in making http request to the APIs and rendering HTML files.
+14. **static:** In folder structure for a Flask app, the static folder contains assets used by the templates, including CSS files, JavaScript files, and images.
+15. **templates:** In folder structure for a Flask app, the templates folder houses html files that contain static data as well as placeholders for dynamic data. Flask uses the Jinja template library to render templates
 
 
 ## INSTALLATION AND GUIDE ON HOW TO EXECUTE THE PROJECT

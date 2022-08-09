@@ -164,8 +164,8 @@ def add_sample2():
 
 
 # Endpoint for displaying individual collection's samples
-@app.route("/sample/<string:collection_id>/", methods=["GET","POST"])
-def add_sample(collection_id):
+@app.route("/sample/<string:collection_id>/")
+def view_samples(collection_id):
     # Validate the collection_id
     url = f"{base_url}/api/v1/collection/{collection_id}"
     validate = fn.make_any_request("GET",url)
